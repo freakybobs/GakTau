@@ -1,10 +1,13 @@
 name: Compile Sing-Box Rules
 
 on:
+
   push:
+    branches:
+      - master
+      
   schedule:
-    - cron: '0 13 * * *'
-  workflow_dispatch:
+  - cron: "0 6 * * *"
   
 permissions:
   contents: write
